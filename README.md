@@ -22,7 +22,7 @@ y explorar mediante ventanas la películas, música que me gustan y una traivia 
 ## Opción 2
 
 1. Ingresa por GitHub en la siguiente dirección
-	https://github.com/vopc-26/Blog-Disney_UNIR.git
+	https://github.com/vopc-26/Blog-Disney_UNIR.git o https://vopc-26.github.io/Blog-Disney_UNIR/
 2. Coloca Usurario: pez payaso y la Contraseña: nemo
 
 ## Uso
