@@ -16,7 +16,7 @@ html, body{
     min-height: 100%;
 }
 
-body{
+body{		/* Propiedades del diseño general de la paginas  */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ body{
     color: #333;
 }
 
-.body-trivia{
+.body-trivia{		/* Propiedades de la imagen de fondo de pantalla  */
     background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -38,7 +38,7 @@ main{
     flex: 1;
 }
 
-section,
+section,			/* Propiedades de la caja contenedora de informacion  */
 article{
     background-color: white;
     padding: 25px;
@@ -47,6 +47,7 @@ article{
     box-shadow: 0 0 10px #ccc;
 }
 
+/* Estas son las propiedades de todos los titulos h2, h3, h4, h5  */
 h2{
     font-family: "Open Sans", sans-serif;
     font-size: 35px;
@@ -71,18 +72,20 @@ h5{
 	font-size: 16px;
 }
 
-p{
+/* Estas son las propiedades del parrafo principal de escritura en todas las paginas */
+p{			
     font-size: 13px;
     line-height: 1.6;
     text-align: center;
 }
+/* Estas son las propiedades de la clase parrafo de pagina blog-inicio como subtituo  */
 .p2{
     font-size: 16px;
     line-height: 0.6;
     text-align: center;
 }
 
-button{
+button{   /* Estas son las propiedades del boton de login, cuando no esta activo  */
     background-color: #1565c0;
     color: white;
     border: none;
@@ -91,16 +94,16 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover{			/* Estas son las propiedades del boton de login, cuando si esta activo cambia */
     background-color: #0d47a1;
 }
 
-/* =========================
+/* =====================================
    2. LINEA DE CABEZA Y MENÚ SUPERIOR
-   ========================= */
+   ===================================== */
 
 header{
-    background: linear-gradient(to right, #12194A, #90caf9);
+    background: linear-gradient(to right, #12194A, #90caf9); /* En header nos permite darle propiedades a la barra degradada del top  */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -108,6 +111,7 @@ header{
     padding: 10px 20px;
 }
 
+/* Estas son las propiedades de la posicion y tamaño de la imagen del castillo  */
 .logo-titulo{
     display: flex;
     align-items: center;
@@ -119,21 +123,22 @@ header{
 }
 
 .titulo-principal,
-.logo-titulo h1{
+.logo-titulo h1{  /* Estas son las propiedades del titulo del top Blog Disney de todas las paginas  */
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     color: white;
     margin: 5px;
 }
 
-nav a{
+  /* La etiqueta nav permite darle diseño a las palabras del menu */
+nav a{   /* cuando no estan activa es blanca */
     color: white;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
 }
 
-nav a:hover{
+nav a:hover{  /* cuando se pasa el mouse por arriba cambia de color */
     color: #141450;
     text-decoration: underline;
 }
@@ -142,7 +147,7 @@ nav a:hover{
    3. PÁGINA INICIO - Archivo: Blog-inicio.html
    =============================================== */
 
-.imagen-disney{
+.imagen-disney{  /* Estas son las propiedades del recuadro que tienen las imagenes al rededor con orillas redondeadas  */
     width: 60%;
     height: auto;
     display: block;
@@ -151,12 +156,13 @@ nav a:hover{
     border: 2px solid #007bff;
 }
 
-.caja-inicio{
+/* Estas son las propiedades de las cajas blancas con sombreado de todas las paginas  */
+.caja-inicio{		/* Ajuste se segun pagina  */
     width: 90%;
     margin: 25px auto;
 }
 
-.inicios{
+.inicios{			/* distibucion  */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -164,15 +170,15 @@ nav a:hover{
     margin-top: 20px;
 }
 
-.inicio{
+.inicio{			/* posicion general  */
     text-align: center;
 }
 
-.inicio h3{
+.inicio h3{			/* Color de tipografia  */
     color: #4c6c84;
 }
 
-.inicio img{
+.inicio img{		/* contorno de la imagen  */
     width: 100px;
     height: auto;
     border-radius: 10px;
@@ -182,34 +188,34 @@ nav a:hover{
 
 /* Formulario de contacto 
 ------------------------------------------- */
-#contacto{
+#contacto{   /* Marca la posicion del titulo del formulario  */
     width: 70%;
     margin: 25px auto;
 }
 
-#contacto h2{
+#contacto h2{       /* Cambio del tamaño de la tipografia del titulo del formulario  */
     font-size: 25px;
 }
 
-form{
+form{   /* Posicion de la caja del formulario  */
     display: flex;
     flex-direction: column;
 }
 
-label{
+label{  /* Parte del diseño de los titulos del texto del formulario  */
     margin-top: 12px;
     font-weight: bold;
 }
 
 input,
-textarea{
+textarea{		/* El diseño de la propiedades del texto del formulario  */
     padding: 12px;
     margin-top: 6px;
     border: 1px solid #aaa;
     border-radius: 8px;
 }
 
-textarea{
+textarea{   /* Marca lo alto de la caja del formulario  */
     height: 100px;
 }
 
@@ -219,7 +225,7 @@ textarea{
    4. PÁGINA PELÍCULAS - Archivo: peliculas.html
    ================================================ */
 
-.destinos{
+.destinos{		/* Diseño de la separacion de las imagenes de la pagina de peliculas  */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -227,16 +233,16 @@ textarea{
     margin-top: 20px;
 }
 
-.destino{
+.destino{   /* Alineacion y tamaño de las imagenes  */
     text-align: center;
     width: 150px;
 }
 
-.destino h3{
+.destino h3{   /* Color del titulo de cada imagen  */
     color: #4c6c84;
 }
 
-.destino img{
+.destino img{ 	/* El diseño del contorno de cada imagen  */
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -250,7 +256,7 @@ textarea{
    ============================================ */
 
 
-.img-reproductores{
+.img-reproductores{		/* Diseño de la separacion de las imagenes de la pagina de musica  */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -258,23 +264,23 @@ textarea{
     margin-top: 20px;
 }
 
-.img-reproductor{
+.img-reproductor{		/* Alineacion y tamaño de las imagenes  */
     text-align: center;
     width: 150px;
 }
 
-.img-reproductor h5{
+.img-reproductor h5{	/* Color del titulo de cada imagen  */
     color: #0056b3;
 }
 
-.img-reproductor img{
+.img-reproductor img{		/* El diseño del contorno de cada imagen  */
     width: 100%;
     height: auto;
     border-radius: 10px;
     border: 2px solid #007bff;
 }
 
-.audio-disney{
+.audio-disney{		/* Ajustes para el reproductor de audio (Tamaño, escala segun la pagina y posicion  */
     width: 100px;
     transform: scale(0.6);
     transform-origin: left;
@@ -286,14 +292,14 @@ textarea{
    6. PÁGINA TRIVIA - Archivo: trivia.html
    ========================================== */
 
-.trivia{
+.trivia{	/* Posicion de los elementos de la pagina de trivia  */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.trivia h2{
+.trivia h2{		/* Posicion del titulo  */
     margin-bottom: 20px;
 }
 
@@ -301,12 +307,13 @@ textarea{
     max-width: 100%;
 }
 
-.video-disney{
+.video-disney{		/* El diseño del contorno del video  */
     border: 2px solid #1f6cf5;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
+/* Propiedades del boton en pasivo y activo respectivamente  */
 .boton-video{
     margin-top: 20px;
     background-color: #cb6173;
@@ -327,14 +334,14 @@ textarea{
    7. PÁGINA LOGIN - Archivo: login.html
    ======================================== */
 
-.login-body{
+.login-body{		/* Propiedades del fondo de pantalla del login  */
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/fondo00.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
 
-.login-box{
+.login-box{			/* El diseño de la caja contenedora del para loguiarse  */
     background-color: white;
     width: 350px;
     margin: 100px auto;
@@ -344,7 +351,7 @@ textarea{
     box-shadow: 0 0 15px #555;
 }
 
-.login-box h1{
+.login-box h1{		/* El diseño de la tipografia de titulo  */
     font-family: "Original Surfer", cursive;
     color: #1e88e5;
 }
@@ -357,6 +364,7 @@ textarea{
     border-radius: 8px;
 }
 
+/* Propiedades del boton para ingresar no activo y activo */
 .login-box button{
     width: 95%;
     padding: 12px;
@@ -372,7 +380,7 @@ textarea{
     background-color: #1565c0;
 }
 
-.pass{
+.pass{		/* Diseño del texto que indica el usuario y contraseña  */
     font-size: 10px;
     margin: 15px 0 25px 0;
 }
@@ -383,7 +391,7 @@ textarea{
    8. FOOTER
    ========================= */
 
-footer{
+footer{		/* El diseño de la barra de pie de pagina  */
     background-color: #142878;
     color: white;
     text-align: center;
@@ -397,6 +405,8 @@ footer{
    9. RESPONSIVE - Para pantallas pequeñas
    ========================================== */
 
+
+/* Comportamiento de la pagina cuando sea abierta en un dispositivo diferente a una PC o Laptop, para que se ajuste  */
 @media (max-width: 768px){
     header{
         flex-direction: column;
