@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
     <title>Trivia Disney</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">		<!-- Tres lineas para la insercion de tipografia especial -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Enlace al archivo CSS modificado -->
 </head>
 
 
-<body class="body-trivia">
+<body class="body-trivia">	<!-- Manda llamar el diseño del cuerpo de todas las paginas -->
 
 <!-- Diseño de la barra Top -->
-    <header>
+    <header>				<!-- Informacion para lo que contendra la barra de la cabeza de la pagina y el fondo de pantalla -->
         <div class="logo-titulo">
 			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
 			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
 		</div>
 		
-        <nav>
+        <nav>		<!-- Diseño de la cabeza de la pagina solicitud 01 de la actividad -->
+		
             <a href="Blog-inicio.html">Inicio</a> <!-- Enlace a la página de inicio -->
             <a href="peliculas.html">Películas</a> <!-- Enlace a la página de Peliculas favoritas -->
             <a href="musica.html">Música</a> <!-- Enlace a la página de Musica favorita -->
-            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de trivia -->
+            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Video favorito -->
             <a href="index.html">Salir</a> <!-- Botón de salida que redirige a la página de login -->
             
         </nav>
@@ -32,37 +33,57 @@
 
 <!-- Diseño del Cuerpo Pagina -->
     <main>
-		<div class="trivia">
+		<div class="trivia">		<!-- Contenedor de la estuctura de la página -->
 		
-			<h2>Trivia Identifica la pelicula</h2>
+			<h2>Trivia Identifica la pelicula</h2>		<!-- Titulos y subtitulos -->
 			<h4>El video pertenecen a su creador(autor), 
 			se utilizan como ejemplo para proyecto escolar.</h4>
 			
-			<section class="caja-inicio">
-            <p>
-                Buscando tema para esta actividad, me encontré en Youtube esta y otras trivias
-				para saber que tan fan era de Disney, en esta en específico, se escuchan pocos segundos 
-				la música y debes adivinar de que película se trata. La verdad me divertí mucho
-				sacando del baúl de mi cerebro de que canciones de antaño y modernas para adivinar la película. 
-				<br><br>Aquí se utilizo el colocar el video en mp4, solo de 1 minuto, y se crea un link al canal del creador.
-				<i>Se intento adjuntar el video mandándolo llamar desde Youtube, por medio del código <b>EMBED</b>, 
-				pero marcaba error 153, por eso la decisión de hacerlo de la otra manera.</i>
+			<section class="caja-inicio">	<!-- Incio de la agrupacion del texto explicatorio -->
+				<p>
+					Buscando tema para esta actividad, me encontré en Youtube esta y otras trivias
+					para saber que tan fan era de Disney, en esta en específico, se escuchan pocos segundos 
+					la música y debes adivinar de que película se trata. La verdad me divertí mucho
+					sacando del baúl de mi cerebro de que canciones de antaño y modernas para adivinar la película. 
+					<br><br>Aquí se utilizo el colocar el video en mp4 de 1 minuto y crea un un <b>botón</b> para direccionar al canal del creador.
+					<i>Se intento adjuntar el video mandándolo llamar desde Youtube, por medio del código <b>IFRAME y EMBED</b>, 
+					pero marca error 153, por eso la decisión de implementar tambien de la otra manera.</i>
  
-            </p>
-        </section>
-			
+				</p>
+			</section>
 		
-           <video controls width="480" class="video-disney">
-				<source src="assets/img/AD-DISNEY.mp4" type="video/mp4"> <!-- Corto video de la trivia  -->
-			</video><br>			
-			El video pertenece al canal de CATFILM en youtube, si deseas verlo completo
-			da clic en el boton.</br>
+			<section>		<!-- Agrupacion de los elementos relacionados con video incrustado con controlador en mp4 -->
 			
-			<br></br> <!-- Para salto de linea -->
+				<video controls width="560" class="video-disney">	<!-- Diseño y llamado del video, junto con el botón que lleva a la pagina origen -->
+					<source src="assets/img/AD-DISNEY.mp4" type="video/mp4"> <!-- Corto video de la trivia  -->
+				</video>
 			
-			<a href="https://www.youtube.com/watch?v=qzeK7aoBUFg" target="_blank" class="boton-video"> <!-- Link para ver el video en Youtube -->
-			Ver video en Youtube en canal CATFILM
-			</a>
+				<br>			<!-- Salto de línea -->
+					El video pertenece al canal de CATFILM en youtube,<br> si deseas verlo completo
+					da clic en el boton.</br>
+				<br>			
+				<a href="https://www.youtube.com/watch?v=qzeK7aoBUFg" target="_blank" class="boton-video"> <!-- Link para ver el video en Youtube -->
+					Ver video en Youtube en canal CATFILM
+				</a>
+			</section>	
+		
+	 <!-- Elemento externo incrustado -->
+	 
+			<section class="table">			<!-- Agrupacion de los elementos relacionados con video incrustado mediante llamado de un liga de Youtube -->
+				<h2>Video externo incrustado</h2>
+				<p>Adivina el Personaje un video insertado desde YouTube.</p>
+
+				<!-- Anidacion del la liga del video dentro del documento -->
+				<iframe 				
+					width="560" 
+					height="315" 
+					src="https://www.youtube.com/embed/cumdq8wGEvA?si=csK3FRy1d73YgL33" 
+					title="Video externo"
+					allowfullscreen
+					class="video-disney">
+				</iframe>
+			</section>
+		
 		</div>
 	</main>
 
