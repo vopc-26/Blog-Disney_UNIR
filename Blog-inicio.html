@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incio - Blog de Disney</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
+    <title>Incio - Blog de Disney</title> 	<!-- Título de la página -->
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">		<!-- Tres lineas para la insercion de tipografia especial -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css"> <!-- Enlace al archivo CSS modificado -->
 </head>
 
-<body class="body-trivia">
+<body class="body-trivia">	<!-- Manda llamar el diseño del cuerpo de todas las paginas -->
 
 <!-- Diseño de la barra Top -->
-    <header>
+    <header>				<!-- Informacion para lo que contendra la barra de la cabeza de la pagina y el fondo de pantalla -->
         <div class="logo-titulo">
 			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
 			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
 		</div>
 		
-        <nav>
+        <nav>		<!-- Diseño de la cabeza de la pagina solicitud 01 de la actividad  contenedor de barra de menú -->
+		
             <a href="Blog-inicio.html">Inicio</a> <!-- Enlace a la página de inicio -->
             <a href="peliculas.html">Películas</a> <!-- Enlace a la página de Peliculas favoritas -->
             <a href="musica.html">Música</a> <!-- Enlace a la página de Musica favorita -->
@@ -33,58 +35,64 @@
 <!-- Diseño del Cuerpo Pagina -->
     <main>
 	
-        <img src="assets/img/banner2.jpg" alt="Imagen de Disney" class="imagen-disney"> <!-- Imagen de cabecera -->
+        <img src="assets/img/banner2.jpg" alt="Imagen de Disney" class="imagen-disney"> <!-- Imagen del banner de incio, manda llamar estilo -->
 		
-        <section class="caja-inicio">
+        <section class="caja-inicio"> 		<!-- Incio de la agrupacion del texto explicatorio y su estilo en la caja contenedora -->
             <h2>Bienvenido a mi blog</h2>
-            <p>
+            <p>								<!-- Se inicia el parrafo de texto -->
                 En este blog comparto algunas de mis películas y canciones favoritas de Disney,
 				incluyendo una trivia para identificar la película por medio de canciones. <br><br>
 				
                 <i>Esta página fue creada para la actividad de la materia de Desarrollo de Aplicaciones de Red,
 				para poner en práctica la creación de páginas web por medio del lenguaje HTML y CSS,
 				también se aprendió a incluir imágenes, audio, direccionar mediante links, así como crear
-				formularios he inicios de sesión.</i>
+				formularios he inicios de sesión.</i>			 <!-- Se implementa etiqueta para tipografia tipo italica -->
 
             </p>
         </section>		
 		
-		<section class="caja-inicio">
-			<h3>Seccion de Areas favoritas.</h3>
+		<section class="caja-inicio">		<!-- Agrupacion de la información dentro de la sección de favoritos -->
+			<h3>Sección de áreas favoritas.</h3>
 			<p class="p2">selecciona una imagen.</p>
-			<div class="inicios">
-				<div class="inicio">
-					<h3>Peliculas</h3>
+			
+			<div class="inicios">		<!-- Incio del contenedor del apartedo de sección de favoritos -->
+				<div class="inicio">	<!-- Contenedor y estilo de la imagen y direccionamiento de películas -->
+					<h3>Películas</h3>
 					<a href="peliculas.html"><img src="assets/img/pelicula.jpg" alt="Vista de Peliculas favoritas"></a> <!-- Imagen de Peliculas favoritas -->
 				</div>
-				<div class="inicio">
+				
+				<div class="inicio">	<!-- Contenedor y estilo de la imagen y direccionamiento de Música -->
 					<h3>Música</h3>
 					<a href="musica.html"><img src="assets/img/musica.jpg" alt="Vista de Italia"></a> <!-- Imagen de Italia -->
 				</div>
-				<div class="inicio">
+				
+				<div class="inicio">	<!-- Contenedor y estilo de la imagen y direccionamiento de Trivias -->
 					<h3>Trivias</h3>
 					<a href="trivia.html"><img src="assets/img/trivia.jpg" alt="Vista de Japón"></a> <!-- video de trivia -->
 				</div>
+				
 			</div>
 		</section>
 	
 	
 	<!-- Formulario de contacto -->
-        <section id="contacto">
+	
+        <section id="contacto">			<!-- Agrupacion de la informacion del formulario -->
             <h2>Formulario de contacto</h2>
 
-            <form onsubmit="enviarFormulario(event)">
-                <label>Nombre:</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+            <form onsubmit="enviarFormulario(event)">	<!-- Estructura para crear el formulario -->
+                <label>Nombre:</label>					<!-- Titulo de la barra donde escribes la respuesta al formulario -->
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>	<!-- caja del formulario -->
 
-                <label>Correo:</label>
-                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+                <label>Correo:</label>					<!-- Titulo de la barra donde escribes la respuesta al formulario -->
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>	<!-- caja del formulario -->
 
-                <label>Mensaje:</label>
-                <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                <label>Mensaje:</label>					<!-- Titulo de la barra donde escribes la respuesta al formulario -->
+                <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>	<!-- caja del formulario -->
 
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar</button>		<!-- funcio del Botón y su estilo -->
             </form>
+			
         </section>
 		
     </main>
