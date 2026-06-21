@@ -1,4 +1,4 @@
-# Proyecto Blog de Disney favoritos Veronica Pedroza
+### Proyecto Blog de Disney favoritos V. P.
 
 Este proyecto es un blog de mis gustos por Disney, es una sitio sencillo que permite a los usuarios iniciar sesión 
 y explorar mediante ventanas la películas, música que me gustan y una traivia divertida.
