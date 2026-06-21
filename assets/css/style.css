@@ -1,0 +1,426 @@
+/* =====================================================
+   BLOG DISNEY - STYLE.CSS
+   Ordenado según el menú: Inicio, Películas, Música, Trivia, Login
+   ===================================================== */
+
+/* =========================
+   1. ESTILOS GENERALES
+   ========================= */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    min-height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+.body-trivia{
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 80%;
+    margin: 30px auto;
+    flex: 1;
+}
+
+section,
+article{
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: #1f6cf5;
+	line-height: 0.1;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+	line-height: 0.1;
+}
+
+h4{
+    font-size: 14px;
+    color: #ac5484;
+    text-align: center;
+	line-height: 1;
+}
+h5{
+    text-align: center;
+	font-size: 16px;
+}
+
+p{
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+.p2{
+    font-size: 16px;
+    line-height: 0.6;
+    text-align: center;
+}
+
+button{
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0d47a1;
+}
+
+/* =========================
+   2. LINEA DE CABEZA Y MENÚ SUPERIOR
+   ========================= */
+
+header{
+    background: linear-gradient(to right, #12194A, #90caf9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.titulo-principal,
+.logo-titulo h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #141450;
+    text-decoration: underline;
+}
+
+/* ===============================================
+   3. PÁGINA INICIO - Archivo: Blog-inicio.html
+   =============================================== */
+
+.imagen-disney{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+.caja-inicio{
+    width: 90%;
+    margin: 25px auto;
+}
+
+.inicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.inicio{
+    text-align: center;
+}
+
+.inicio h3{
+    color: #4c6c84;
+}
+
+.inicio img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+
+/* Formulario de contacto 
+------------------------------------------- */
+#contacto{
+    width: 70%;
+    margin: 25px auto;
+}
+
+#contacto h2{
+    font-size: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input,
+textarea{
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+textarea{
+    height: 100px;
+}
+
+
+
+/* ================================================
+   4. PÁGINA PELÍCULAS - Archivo: peliculas.html
+   ================================================ */
+
+.destinos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.destino{
+    text-align: center;
+    width: 150px;
+}
+
+.destino h3{
+    color: #4c6c84;
+}
+
+.destino img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+
+
+/* ============================================
+   5. PÁGINA MÚSICA - Archivo: musica.html
+   ============================================ */
+
+
+.img-reproductores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.img-reproductor{
+    text-align: center;
+    width: 150px;
+}
+
+.img-reproductor h5{
+    color: #0056b3;
+}
+
+.img-reproductor img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+.audio-disney{
+    width: 100px;
+    transform: scale(0.6);
+    transform-origin: left;
+}
+
+
+
+/* ==========================================
+   6. PÁGINA TRIVIA - Archivo: trivia.html
+   ========================================== */
+
+.trivia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trivia h2{
+    margin-bottom: 20px;
+}
+
+.trivia video{
+    max-width: 100%;
+}
+
+.video-disney{
+    border: 2px solid #1f6cf5;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.boton-video{
+    margin-top: 20px;
+    background-color: #cb6173;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.boton-video:hover{
+    background-color: #4da7df;
+}
+
+
+
+/* ========================================
+   7. PÁGINA LOGIN - Archivo: login.html
+   ======================================== */
+
+.login-body{
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/fondo00.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.login-box{
+    background-color: white;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #555;
+}
+
+.login-box h1{
+    font-family: "Original Surfer", cursive;
+    color: #1e88e5;
+}
+
+.login-box input{
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+.login-box button{
+    width: 95%;
+    padding: 12px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover{
+    background-color: #1565c0;
+}
+
+.pass{
+    font-size: 10px;
+    margin: 15px 0 25px 0;
+}
+
+
+
+/* =========================
+   8. FOOTER
+   ========================= */
+
+footer{
+    background-color: #142878;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+
+/* ==========================================
+   9. RESPONSIVE - Para pantallas pequeñas
+   ========================================== */
+
+@media (max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+    .imagen-disney,
+    .caja-inicio,
+    #contacto{
+        width: 90%;
+    }
+
+    .inicios,
+    .destinos,
+    .img-reproductores{
+        grid-template-columns: 1fr;
+    }
+}

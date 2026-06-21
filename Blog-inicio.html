@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incio - Blog de Disney</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css"> <!-- Enlace al archivo CSS modificado -->
+</head>
+
+<body class="body-trivia">
+
+<!-- Diseño de la barra Top -->
+    <header>
+        <div class="logo-titulo">
+			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
+			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
+		</div>
+		
+        <nav>
+            <a href="Blog-inicio.html">Inicio</a> <!-- Enlace a la página de inicio -->
+            <a href="peliculas.html">Películas</a> <!-- Enlace a la página de Peliculas favoritas -->
+            <a href="musica.html">Música</a> <!-- Enlace a la página de Musica favorita -->
+            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Video favorito -->
+            <a href="index.html">Salir</a> <!-- Botón de salida que redirige a la página de login -->
+            
+        </nav>
+    </header>
+
+
+<!-- Diseño del Cuerpo Pagina -->
+    <main>
+	
+        <img src="assets/img/banner2.jpg" alt="Imagen de Disney" class="imagen-disney"> <!-- Imagen de cabecera -->
+		
+        <section class="caja-inicio">
+            <h2>Bienvenido a mi blog</h2>
+            <p>
+                En este blog comparto algunas de mis películas y canciones favoritas de Disney,
+				incluyendo una trivia para identificar la película por medio de canciones. <br><br>
+				
+                <i>Esta página fue creada para la actividad de la materia de Desarrollo de Aplicaciones de Red,
+				para poner en práctica la creación de páginas web por medio del lenguaje HTML y CSS,
+				también se aprendió a incluir imágenes, audio, direccionar mediante links, así como crear
+				formularios he inicios de sesión.</i>
+
+            </p>
+        </section>		
+		
+		<section class="caja-inicio">
+			<h3>Seccion de Areas favoritas.</h3>
+			<p class="p2">selecciona una imagen.</p>
+			<div class="inicios">
+				<div class="inicio">
+					<h3>Peliculas</h3>
+					<a href="peliculas.html"><img src="assets/img/pelicula.jpg" alt="Vista de Peliculas favoritas"></a> <!-- Imagen de Peliculas favoritas -->
+				</div>
+				<div class="inicio">
+					<h3>Música</h3>
+					<a href="musica.html"><img src="assets/img/musica.jpg" alt="Vista de Italia"></a> <!-- Imagen de Italia -->
+				</div>
+				<div class="inicio">
+					<h3>Trivias</h3>
+					<a href="trivia.html"><img src="assets/img/trivia.jpg" alt="Vista de Japón"></a> <!-- video de trivia -->
+				</div>
+			</div>
+		</section>
+	
+	
+	<!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+
+            <form onsubmit="enviarFormulario(event)">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label>Correo:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+
+                <label>Mensaje:</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+		
+    </main>
+	
+<!-- Diseño del Footer  -->
+	<footer>
+        Blog de Disney - Todos los derechos reservados a sus autores originales &copy; 2026 <!-- Pie de página con derechos de autor -->
+    </footer>
+	
+</body>
+</html>
