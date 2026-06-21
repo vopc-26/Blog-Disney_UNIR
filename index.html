@@ -4,15 +4,16 @@
     <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
     <title>Mis peliculas favoritas Disney</title> <!-- Título de la página -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">			<!-- Tres lineas para la insercion de tipografia especial -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css"> <!-- Enlaza el archivo CSS -->
 </head>
 
-<body class="login-body">
+<body class="login-body">		<!-- Manda llamar el diseño del cuarpo de todas las paginas -->
 
-    <header>
+    <header>		<!-- Informacion para lo que contendra la barra de la cabeza de la pagina y el fondo de pantalla -->
 		<div class="logo-titulo">
 			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
 			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
@@ -20,29 +21,29 @@
     </header>
 
 	<main>
-    	<div class="login-box">
+    	<div class="login-box">		<!-- Contenedor de la caja de login, y sus propiedades en css -->
 			<h1>Blog Disney</h1>
 			
-			<p><b>Inicia sesión para entrar al blog</b></p>
+			<p><b>Inicia sesión para entrar al blog</b></p> 	<!-- Subtitulo y sus propiedades -->
 
-			<form action="Blog-inicio.html">
-				<input type="text" placeholder="Usuario" required>
-				<input type="password" placeholder="Contraseña" required>
+			<form action="Blog-inicio.html">			<!-- Propiedades necesarias para acceder al sitio por medio del login -->
+				<input type="text" placeholder="Usuario" required>		<!-- campo para agregar el texto de usuario -->
+				<input type="password" placeholder="Contraseña" required>  <!-- Campo para agregar el texto de la contraseña -->
 				
-				<p class="pass"><b>Usuario:</b> pez payaso - <b>Contraseña</b>: nemo</p>
+				<p class="pass"><b>Usuario:</b> pez payaso - <b>Contraseña</b>: nemo</p>  <!-- Informacion para saber el usuario y contraseña -->
 				
-				<button type="submit">Entrar</button>
+				<button type="submit">Entrar</button>  <!-- Boton para dar clic y acceder al sitio -->
 			</form>			
 		</div>
 	</main>
     
 
- <!-- Diseño del Footer  -->
+ <!-- Diseño del Footer o pie de pagina llamando CSS  -->
 	<footer>
         Blog de Disney - Todos los derechos reservados a sus autores originales &copy; 2026 <!-- Pie de página con derechos de autor -->
     </footer>
 
-    <script src="assets/js/login.js"></script> <!-- Enlaza el archivo JavaScript -->
+    <script src="assets/js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
 
 </body>
 </html>
