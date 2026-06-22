@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
     <title>Películas Favoritas - Disney</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">		<!-- Tres lineas para la insercion de tipografia especial -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Enlace al archivo CSS modificado -->
 </head>
 
 
-<body class="body-trivia">
+<body class="body-trivia">	<!-- Manda llamar el diseño del cuerpo de todas las paginas -->
 
 <!-- Diseño de la barra Top -->
-    <header>
+    <header>				<!-- Informacion para lo que contendra la barra de la cabeza de la pagina y el fondo de pantalla -->
         <div class="logo-titulo">
 			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
 			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
 		</div>
 		
-        <nav>
+        <nav>		<!-- Diseño de la cabeza de la pagina solicitud 01 de la actividad -->
+		
             <a href="Blog-inicio.html">Inicio</a> <!-- Enlace a la página de inicio -->
             <a href="peliculas.html">Películas</a> <!-- Enlace a la página de Peliculas favoritas -->
             <a href="musica.html">Música</a> <!-- Enlace a la página de Musica favorita -->
-            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Trivia -->
+            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Video favorito -->
             <a href="index.html">Salir</a> <!-- Botón de salida que redirige a la página de login -->
             
         </nav>
     </header>
 
 <!-- Diseño del Cuerpo Pagina -->
+
     <main>
-        <h2>Películas favoritas de Disney</h2>
+        <h2>Películas favoritas de Disney</h2>		<!-- Titulos y subtitulos de la sección -->
 		<h4>Todas la imagenes pertenecen a su creador(autor), 
 			se utilizan como ejemplo para proyecto escolar.</h4>
 			
-        <section class="caja-inicio">
-            <p>
+        <section class="caja-inicio">				<!-- Agrupación de los elementos del texto -->
+            <p>										<!-- Inicio del parrafo, el texto contiene etiquetas para letras cursivas, y negritas -->
                 En esta sección, he colocado algunas de mis películas favoritas, 
 				tanto por la animación, los personajes, la actuación en voces, así como música. 
-				En la actualidad siento que siguen siendo de las mejores, a mi parecer.  
-				Aun hay mas repertorio, pero estas son las que vería una y otra vez.
+				En la actualidad siento que siguen siendo de las mejores, a mi parecer. <br><br>
+				<i>Aun hay mas repertorio en donde coloque peliculas mas recientes y la mayoria entrando,
+				mas en la era digital, las cuales coloque en una <b>tabla</b> señalando con estrellas cuales
+				me gustan mas.</i>
 
             </p>
         </section>
   
-        <div class="destinos">
-            <div class="destino">
+        <div class="destinos">					<!-- Contenedor principal de todos los elementos relacionados con la sección y el diseño de cada renglón -->
+            <div class="destino">				<!-- Contenedor individual para el titulo del ejemplo de la pelicula y la imagen que se manda llamar para este caso-->
                 <h3>Año - 1963</h3>
                 <img src="assets/img/espada.jpg"> <!-- Imagen de Pelicula La espada en la Piedra -->
             </div>
-            <div class="destino">
+            <div class="destino">				<!-- A partir de este contenedor, se repite las veces necesarias segun se necesite para hacer la estuctura de cada ejemplo -->
                 <h3>Año - 1967</h3>
                 <img src="assets/img/libro.jpg" > <!-- Imagen de Pelicula El libro de la selva -->
             </div>
-            <div class="destino">
+            <div class="destino">				<!-- En cada contenedor se manda llamar un estilo el cual le da diseño a cada titulo e imagen del ejemplo --> 
                 <h3>Año - 1970</h3>
                 <img src="assets/img/aristogatos.jpg"> <!-- Imagen de Pelicula Los Aristogatos -->
             </div>
@@ -73,6 +77,57 @@
                 <img src="assets/img/mulan.jpg"> <!-- Imagen de Pelicula Mulan -->
             </div>
         </div>
+		
+		<!-- Tabla de películas -->
+        <section class="table">					<!-- Agrupación de toda la sección de la tabla, titulos, tabla e información que va dentro de la tabla -->
+            <h2>Películas destacadas</h2>
+
+            <table>								<!-- Etiqueta para la agupacion de cada linea y columna en la tabla -->
+                <tr>							<!-- Contenedor del renglón de los titulos de las columnas y su diseño -->
+                    <th>Película</th>			<!-- etiqueta que nos da el diseño y permite colocar los datos que se quieren mostrar -->
+                    <th>Año</th>					<!-- y asi para el llenado de cada columna del renglón de titulos -->
+                    <th>Género</th>
+                    <th>Calificación</th>
+                </tr>
+				<tr>							<!-- Contenedor del renglón de la informacón de cada pelicula agregada y su diseño -->
+                    <td>Aladin</td>				<!-- Etiqueta que nos permite colocar la información del nombre de la pelicula y su diseño -->
+                    <td>1992</td>				<!-- Etiqueta que nos permite colocar la información del fecha de creación de la pelicula y su diseño -->
+                    <td>Animación / Comedia / Musical</td>	<!-- Etiqueta que nos permite colocar la información del Genero de la pelicula y su diseño -->
+                    <td>★★★★★</td>			<!-- Etiqueta que nos permite colocar estrellas para darle una alificacion agrado a la pelicula y su diseño -->
+                </tr>
+				<tr>				<!-- Esta estuctura se repetie en toda la información que se coloque en cada renglón de las peliculas que se quieran agregar -->
+                    <td>WALL-E</td>
+                    <td>2008</td>
+                    <td>Animación Digital</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>La Princesa y El Sapo</td>
+                    <td>2009</td>
+                    <td>Animación / Musical</td>
+                    <td>★★★★★</td>
+                </tr>
+				<tr>
+                    <td>Toy Story 3</td>
+                    <td>2010</td>
+                    <td>Animación Digital / Comedia</td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td>Coco</td>
+                    <td>2017</td>
+                    <td>Animación Digital / Musical</td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td>Encanto</td>
+                    <td>2021</td>
+                    <td>Animación Digital / Musical</td>
+                    <td>★★★★★</td>
+                </tr>
+            </table>
+        </section>
+		
     </main>
 
 
