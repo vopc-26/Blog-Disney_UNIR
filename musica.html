@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Establece el conjunto de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la vista para dispositivos móviles -->
     <title>Música Favoritas - Disney</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">		<!-- Tres lineas para la insercion de tipografia especial -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Enlace al archivo CSS modificado -->
 </head>
 
-
-<body class="body-trivia">
+<body class="body-trivia">	<!-- Manda llamar el diseño del cuerpo de todas las paginas -->
 
 <!-- Diseño de la barra Top -->
-    <header>
+    <header>				<!-- Informacion para lo que contendra la barra de la cabeza de la pagina y el fondo de pantalla -->
         <div class="logo-titulo">
 			<img src="assets/img/castillo-limpio.png" alt="Castillo Disney" class="logo">
 			<h1 class="titulo-principal">BLOG DISNEY</h1> <!-- Título principal -->
 		</div>
 		
-        <nav>
+        <nav>		<!-- Diseño de la cabeza de la pagina solicitud 01 de la actividad -->
+		
             <a href="Blog-inicio.html">Inicio</a> <!-- Enlace a la página de inicio -->
             <a href="peliculas.html">Películas</a> <!-- Enlace a la página de Peliculas favoritas -->
             <a href="musica.html">Música</a> <!-- Enlace a la página de Musica favorita -->
-            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Trivia -->
+            <a href="trivia.html">Trivia</a> <!-- Enlace a la página de Video favorito -->
             <a href="index.html">Salir</a> <!-- Botón de salida que redirige a la página de login -->
             
         </nav>
@@ -32,12 +32,12 @@
 
 <!-- Diseño del Cuerpo Pagina -->
     <main>
-        <h2>Música favoritas de Disney</h2>  
+        <h2>Música favoritas de Disney</h2>  		<!-- Diseño del Cuerpo Pagina con titulos y subtitulos -->
         <h4>Todas la imagenes y audios pertenecen a su creador(autor), 
 			se utilizan como ejemplo para proyecto escolar.</h4>
 			
-		<section class="caja-inicio">
-            <p>
+		<section class="caja-inicio">		<!-- Incio de la agrupacion del texto explicatorio -->
+            <p>								<!-- parrafo -->
                 Como lo había mencionado en la sección de películas, 
 				la música es una de las partes que mas me gustan de las animaciones, 
 				ya que están hechas para que se nos queden pegadas, 
@@ -46,17 +46,17 @@
             </p>
         </section>
 			
-        <div class="img-reproductores">
-            <div class="img-reproductor">
+        <div class="img-reproductores">					<!-- Contenedor principal de los elementos dentro de la pagina de musica -->
+            <div class="img-reproductor">				<!-- Contenedor de los elementos asignados al titulo, el llamado a la imagen. -->
                 <h5>No se habla de Bruno</h5>
-                <img src="assets/img/bruno.jpg"> <!-- Imagen de Pelicula Encanto cancio de la familia madrigal-->
-				<div class="audio-disney">
-					<audio controls>
-						<source src="assets/audio/bruno.mp3" type="audio/mpeg">
+                <img src="assets/img/bruno.jpg">		 <!-- Imagen de Pelicula Encanto cancio de la familia madrigal-->
+				<div class="audio-disney">				<!-- contenedor de los elementos relacionados con la musica-->
+					<audio controls>					<!-- Codigo para mandar llamar el reproductor de audio con controles de reproducción -->
+						<source src="assets/audio/bruno.mp3" type="audio/mpeg">	<!-- semanda llamar el audio a la carpeta -->
 					</audio>
 				</div>
             </div>
-			
+														<!-- Este codigo se repite varias veces, segun la cantidad de videos y audios a mostrar -->
             <div class="img-reproductor">
                 <h5>Fuego del infierno</h5>
                 <img src="assets/img/notredame.jpg"> <!-- Imagen de Pelicula El Jorobado de Notredame cancion de Frodo -->
